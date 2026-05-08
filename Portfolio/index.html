@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Li's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="browser">
+
+  <!-- TITLEBAR -->
+  <div class="titlebar">
+    <div class="traffic-lights">
+      <div class="dot close"></div>
+      <div class="dot min"></div>
+      <div class="dot max"></div>
+    </div>
+
+    <div class="nav-btns">
+      <button class="nav-btn" id="btnBack"   title="Back">&#8592;</button>
+      <button class="nav-btn" id="btnFwd"    title="Forward">&#8594;</button>
+      <button class="nav-btn" id="btnReload" title="Reload">&#8635;</button>
+    </div>
+
+    <div class="urlbar">
+      <span class="urlbar-lock">&#9679;</span>
+      <span class="urlbar-text" id="urlDisplay">
+        <span class="url-proto">https://</span><span class="url-domain">li-portfolio.design</span><span class="url-path" id="urlPath">/home</span>
+      </span>
+    </div>
+
+    <button class="share-btn" title="Share">&#8679;</button>
+  </div>
+
+  <!-- TAB BAR -->
+  <div class="tabbar" id="tabbar">
+    <!-- tabs injected by script.js -->
+    <button class="tab-new" title="New tab">+</button>
+  </div>
+
+  <!-- CONTENT AREA -->
+  <div class="content-area" id="contentArea">
+
+    <!-- HOME PAGE -->
+    <div class="page active" id="page-home">
+      <div class="home-hero">
+
+        <div class="home-badge">
+          <span class="badge-dot"></span>
+          <span class="badge-text">Design Student &mdash; UX/UI &amp; Graphic Design</span>
+        </div>
+
+        <h1 class="home-title">
+          Hi, I'm Li <span class="wave">✦</span><br>
+          <span class="grad">aspiring designer</span> &amp; illustrator.
+        </h1>
+
+        <p class="home-sub">
+          I create <strong>visually stunning, user-centered designs</strong> that leave an impact. Passionate about UX/UI, graphic design, and digital illustration — here's a look at what I've been building.
+        </p>
+
+        <div class="home-meta">
+          <span class="meta-pill">🎨 <span class="pill-val">UX / UI Design</span></span>
+          <span class="meta-pill">✏️ <span class="pill-val">Graphic Design</span></span>
+          <span class="meta-pill">🖼️ <span class="pill-val">Digital Illustration</span></span>
+        </div>
+
+        <div class="home-cta">
+          <button class="btn btn-primary" onclick="openTab('cafeolate')">View Projects</button>
+          <button class="btn btn-ghost"   onclick="openTab('about')">About Me</button>
+        </div>
+
+      </div>
+
+      <div class="section-label">Projects</div>
+      <div class="project-grid" id="homeGrid">
+        <!-- cards injected by script.js -->
+      </div>
+    </div>
+
+    <!-- PROJECT + ABOUT PAGES injected by script.js -->
+
+  </div>
+
+  <!-- STATUS BAR -->
+  <div class="statusbar">
+    <span class="status-item"><span class="status-dot"></span> li-portfolio.design</span>
+    <span class="status-item" id="statusProject">Home</span>
+    <span class="status-item" style="margin-left:auto;" id="statusCount">
+      <a href="https://github.com/Cl350" target="_blank" rel="noopener noreferrer"
+         style="color:inherit;text-decoration:none;">GitHub</a>
+      &nbsp;·&nbsp;
+      <a href="https://www.linkedin.com/in/li-650832252/" target="_blank" rel="noopener noreferrer"
+         style="color:inherit;text-decoration:none;">LinkedIn</a>
+    </span>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
